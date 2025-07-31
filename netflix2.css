@@ -1,0 +1,140 @@
+.plan-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  padding: 2rem;
+  padding-top: 0rem;
+  margin-top: 0px;
+  flex-wrap: nowrap;           /* 👈 ensures no wrapping */
+  box-sizing: border-box;
+  font-family:sans-serif;
+  position: relative;
+  z-index: 199;
+  background-color:black;
+  box-shadow: 0px 0px 90px 70px black;
+}
+
+.plan-card {
+  flex: 1 1 0;                  /* 👈 fluid resizing of cards */
+  min-width: 150px;            /* 👈 avoid becoming unreadable */
+  max-width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom right, #003366, #004080);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 200;
+}
+
+
+.plan-card h2 {
+  font-size: 1.5rem;
+}
+
+.plan-card .resolution {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.plan-card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.plan-card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.plan-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Individual gradients */
+.mobile {
+  background: linear-gradient(to bottom right, rgb(53, 53, 119,0.5),rgb(37, 37, 85), #520066);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.basic {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom right, rgb(53, 53, 119,0.5),rgb(37, 37, 85), #520066);
+  position: relative;
+}
+
+.standard {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom right, #7d009c,rgb(65, 12, 131), rgba(2, 2, 248, 0.5));
+}
+
+.premium {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom right, #99004d,rgb(91, 21, 96), rgba(2, 2, 248, 0.5));
+}
+
+.mobile:hover{
+   background: linear-gradient(to bottom right, rgba(42, 94, 238, 0.5),rgb(64, 44, 165), #520066);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.basic:hover{
+   background: linear-gradient(to bottom right, rgba(42, 94, 238, 0.5),rgb(64, 44, 165), #520066);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.standard:hover{
+  background: linear-gradient(to bottom right, #b725db,rgb(79, 18, 155), rgba(2, 2, 248, 0.5));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.premium:hover{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom right, #ce1772,rgb(125, 13, 133), rgba(2, 2, 248, 0.5));
+} 
+
+
+/* Badge for 'Most Popular' */
+.badge {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(171, 165, 165, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+  padding: 6px 10px;
+  border-radius: 0px  14px 0px 8px;
+  font-family:sans-serif;
+}
+@media screen and (max-width:900px) {
+.plan-section {
+  display:block;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left:1rem;
+  padding-right:4rem;
+  align-items: center;
+  width: 105%;
+}
+.plan-card{
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+}

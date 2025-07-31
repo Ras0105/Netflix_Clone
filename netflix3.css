@@ -1,0 +1,142 @@
+.plan-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: nowrap;           /* 👈 ensures no wrapping */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 199;
+  background-color:black;
+  box-shadow: 0px 0px 90px 70px black;
+  margin-bottom: 2rem;
+  /*box-shadow: offset-x hz, offset-y vt, blur-radius spread-radius color;*/
+}
+.svg svg {
+  height: 3rem;
+  width: 3rem;
+  display: block;
+}
+.svg {
+  margin-top: auto;           /* Push SVG to the bottom of the flex column */
+  display: flex;
+  justify-content: flex-end;  /* Align SVG to the right if needed */
+}
+.plan-card2 {
+  flex: 1 1 0;                  /* 👈 fluid resizing of cards */
+  min-width: 155px;            /* 👈 avoid becoming unreadable */
+  max-width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  font-family:sans-serif;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps spacing between text and SVG */
+  
+}
+
+.heading{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 1;
+  margin-left: 1.5rem;
+}
+.heading2{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 1;
+  margin-left: 2.5rem;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+.plan-card2 h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.plan-card2 .resolution2 {
+  padding: 0;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.plan-card2 .svg {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Individual gradients */
+.mobile2 {
+  background-color: rgba(71, 69, 69, 0.5);
+ border: 2px solid rgba(70, 64, 64, 0.5);
+}
+
+.basic2 {
+    background-color: rgba(71, 69, 69, 0.5);
+ border: 2px solid rgba(70, 64, 64, 0.5);
+  position: relative;
+}
+
+.standard2 {
+   background-color: rgba(71, 69, 69, 0.5);
+ border: 2px solid rgba(70, 64, 64, 0.5);
+}
+
+.premium2 {
+  background-color: rgba(71, 69, 69, 0.5);
+  border: 2px solid rgba(70, 64, 64, 0.5);
+}
+
+@media screen and (max-width:900px) {
+.plan-section2 {
+  display:block;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left:1rem;
+  padding-right:4rem;
+  align-items: center;
+  width: 105%;
+}
+.plan-card2{
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+.mobile2 { 
+  background-color: rgba(71, 69, 69, 0.5);
+  border: 2px solid rgba(70, 64, 64, 0.5);
+}
+
+.basic2 {
+  background-color: rgba(71, 69, 69, 0.5);
+  border: 2px solid rgba(70, 64, 64, 0.5);
+  position: relative;
+}
+
+.standard2 {
+  background-color: rgba(71, 69, 69, 0.5);
+  border: 2px solid rgba(70, 64, 64, 0.5);
+}
+
+.premium2 {
+
+  background-color: rgba(71, 69, 69, 0.5);
+  border: 2px solid rgba(70, 64, 64, 0.5);
+}  
+.svg svg {
+  height: 4rem;
+  width: 4rem;
+}
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}

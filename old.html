@@ -1,0 +1,196 @@
+
+/* ========== Base Reset ========== */
+body{
+  background-image:radial-gradient(black,rgb(36, 3, 3),black)}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+/* ========== Logo ========== */
+.logo {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+
+}
+.logo-container {
+  position: relative;
+  width: 10rem;
+  height: auto;
+}
+#logo1,
+#logo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9.25rem;
+  height: 2.5rem;
+  transition: opacity 0.3s ease;
+}
+#logo1 {
+  display: block;
+  width: 25vh;
+  height: 10vh;
+}
+#logo2 {
+  display: none;
+}
+
+/* ========== Navigation ========== */
+nav {
+  margin-top: 10vh;
+}
+ul{
+  display: flex;
+  background-color: grey;
+  width: 50vh;
+  height: 3.5vh;
+  align-items: center;
+  border-radius: 25px;
+  justify-content:space-around;
+}
+
+li {
+  list-style: none;
+  margin-right: auto;
+}
+a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+a:active {
+  text-decoration: none;
+  color: rgb(55, 255, 0);
+}
+a {
+  text-decoration: none;
+}
+
+
+/* ========== Language and Signin ========== */
+.block-grouped {
+  display: flex;
+}
+
+.block-grouped div {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 8px 20px;
+  height: 25px;
+}
+
+#language-block-grouped {
+  background-color: black;
+  color: white;
+  border: 1px solid #aaa;
+}
+
+#block-grouped2 {
+  background-color: white;
+  margin-right: 2vh;
+}
+
+#lang-select,
+#arrow {
+  cursor: pointer;
+}
+
+#lang-select {
+  color: white;
+  background-color: black;
+  border: none;
+  margin-left: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#lang-select:active {
+  border: 3px solid rgb(106, 10, 10);
+}
+
+#signin {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+
+/* ========== Header ========== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 1vh;
+  z-index: 999;
+}
+
+.headele {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ========== Hero Section ========== */
+main {
+  margin-top: 20vh;
+}
+
+#hero {
+  
+  height: 100vh;
+  border-radius: 5vh 5vh 0 0;
+  margin: 10vh;
+  background-image: url(Assets/bg.jpg);
+  border: 3px solid  rgba(0, 0, 0, 0.6);
+  position: relative;
+  background-size: cover;         /* scales image to cover whole section */
+  background-position: center; 
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+  z-index: 0;
+}
+.blackk {
+  background-image: linear-gradient(
+  to bottom,
+  #000000 0%,
+  #0a0a0a 20%,
+  #1a1a1a 40%,
+  #2a2a2a 60%,
+  #3a3a3a 80%,
+  #4a4a4a 90%,
+  #666666 97%,
+  #777777 100%
+);
+opacity: 0.66;
+  border-radius: 5vh 5vh 0 0;
+  height: 100vh;
+  position: relative;
+  z-index: 1;  
+  box-shadow: 0px 0vh 15vh 5vh rgba(120, 115, 115, 0.6);
+  /*box-shadow: offset-x hz, offset-y vt, blur-radius spread-radius color;*/
+
+}
+
+
+
+/* ========== Responsive Design ========== */
+@media screen and (max-width: 600px) {
+  #logo1 {
+    display: none !important;
+  }
+
+  #logo2 {
+    display: block !important;
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .block-grouped {
+    display: block;
+  }
+}
+
